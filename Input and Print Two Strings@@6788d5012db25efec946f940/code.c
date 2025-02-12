@@ -2,7 +2,9 @@
 #include<stdio.h>
 int main(){
     char str[];
-    scanf("%c\t", str);
-    printf("You entered: %c\n", str);
+    char str1[];
+    scanf("%c", str);
+    scanf("%c", str1);
+    printf("You entered: %c\n", str "and %c\n", str1);
     return 0;
 }
