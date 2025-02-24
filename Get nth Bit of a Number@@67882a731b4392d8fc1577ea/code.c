@@ -4,7 +4,7 @@ int main(){
     int a, b;
     scanf("%d", &a);
     scanf("%d", &b);
-    int c = (num >> n) & 1;
+    int c = (a >> b) & 1;
     printf("%d", c);
     return 0;
 }
