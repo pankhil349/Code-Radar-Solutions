@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int getLowestSetBit(int num) {
-    return num & -num; // Isolates the lowest set bit
+    return  -num; // Isolates the lowest set bit
 }
 
 int main() {
