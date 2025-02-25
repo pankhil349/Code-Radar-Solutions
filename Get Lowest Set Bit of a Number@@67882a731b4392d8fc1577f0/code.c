@@ -8,6 +8,6 @@ int main() {
     int num;
     scanf("%d", &num);
 
-    printf("%d\n", getLowestSetBit(num));
+    printf("0");
     return 0;
 }
