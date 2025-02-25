@@ -18,9 +18,7 @@ int main() {
     scanf("%d", &num);
     
     int position = findLowestSetBitPosition(num);
-    
-        printf( "%d\n", position);
-    
+        printf("%d", position);
     
     return 0;
 }
