@@ -1,24 +1,14 @@
 #include <stdio.h>
 
 int findLowestSetBitPosition(int num) {
-    if (num == 0) {
-        return -1; // No set bit found
-    }
-    
-    int position = 1; // Position starts from 1 (rightmost bit)
-    while ((num & 1) == 0) {
-        num >>= 1;
-        position++;
-    }
-    return position;
+    if (num == 0) return -1;
+    return (num & -num) ? __builtin_ctz(num) + 1 : -1; // Count trailing zeros + 1
 }
 
 int main() {
     int num;
     scanf("%d", &num);
-    
-    int position = findLowestSetBitPosition(num);
-        printf("%d", position);
-    
+
+    printf("%d\n", findLowestSetBitPosition(num));
     return 0;
 }
