@@ -15,15 +15,14 @@ int findLowestSetBitPosition(int num) {
 
 int main() {
     int num;
-    printf("Enter a number: ");
     scanf("%d", &num);
     
     int position = findLowestSetBitPosition(num);
     
     if (position == -1) {
-        printf("The number has no set bits (it's zero).\n");
+        printf("%d", num);
     } else {
-        printf("The lowest set bit is at position: %d\n", position);
+        printf( "%d\n", position);
     }
     
     return 0;
