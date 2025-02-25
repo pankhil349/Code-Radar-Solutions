@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-int findLowestSetBitPosition(int num) {
-    if (num == 0) return -1; // No set bit found
-
-    return __builtin_ffs(num); // GCC/Clang built-in function for first set bit (1-based index)
+int getLowestSetBit(int num) {
+    return num & -num; // Isolates the lowest set bit
 }
 
 int main() {
     int num;
     scanf("%d", &num);
-    
-    printf("%d\n", findLowestSetBitPosition(num));
+
+    printf("%d\n", getLowestSetBit(num));
     return 0;
 }
