@@ -1,13 +1,7 @@
 #include <stdio.h>
 
 int getLowestSetBit(int num) {
-    if (num == 0) return 0; // No set bit found
-
-    int bit = 1;
-    while ((num & bit) == 0) {
-        bit <<= 1; // Shift bit left until it finds the lowest 1
-    }
-    return bit;
+    return (num == 0) ? 0 : (1 << __builtin_ctz(num)); // 1 << count of trailing zeros
 }
 
 int main() {
