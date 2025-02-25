@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 int getLowestSetBit(int num) {
-    return  -num; // Isolates the lowest set bit
+    if (num == 0) return 0; // No set bit found
+
+    int bit = 1;
+    while ((num & bit) == 0) {
+        bit <<= 1; // Shift bit left until it finds the lowest 1
+    }
+    return bit;
 }
 
 int main() {
