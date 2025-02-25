@@ -18,12 +18,8 @@ int main() {
     scanf("%d", &num);
     
     int position = findLowestSetBitPosition(num);
-    
-    if (position == -1) {
-        printf("%d", position);
-    } else {
         printf( "%d\n", position);
-    }
+    
     
     return 0;
 }
