@@ -6,7 +6,7 @@ int main(){
     scanf("%d", &a);
     scanf("%d", &b);
     scanf("%d", &c);
-    if(pow(a, 2) && pow(b, 2) == pow(c, 2)){
+    if(a * a || b * b == c * c){
         printf("Valid");
     }
     else{
