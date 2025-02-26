@@ -6,7 +6,7 @@ int main(){
     scanf("%d", &a);
     scanf("%d", &b);
     scanf("%d", &c);
-    if(a * a || b * b == c * c){
+    if(a * a + b * b == c * c){
         printf("Valid");
     }
     else{
