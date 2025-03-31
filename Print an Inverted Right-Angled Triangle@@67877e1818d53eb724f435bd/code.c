@@ -1,10 +1,8 @@
 // Your code here...
 #include<stdio.h>
 int main(){
-    int a;
-    scanf("%d", &a);
-    for(i = 0; i < a; i++){
-        printf("*");
-    }
+    int N;
+    scanf("%d", &N);
+    
     return 0;
 }
