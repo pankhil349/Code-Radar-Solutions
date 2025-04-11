@@ -6,10 +6,9 @@ int main(){
     scanf("%d",&b);
     scanf("%c",&op);
 
-    switch(op){
-        case '+':
-        printf("add");
-        case '-';
-        printf("sub")
-    }
+    if(op == '+') printf("%d", a+b);
+    if(op == '-') printf("%d", a-b);
+    if(op == '/') printf("%d", a/b);
+    if(op == '*') printf("%d", a*b);
+
 }
